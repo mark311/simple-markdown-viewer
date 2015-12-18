@@ -18,7 +18,7 @@ var markdown_handler = function (request, response) {
 	    response.write('<script src="/static/highlight/highlight.pack.js"></script>\n');
 	    response.write('<script>hljs.initHighlightingOnLoad();</script>\n')
 	    response.write("</head>\n");
-	    response.write("<body>\n");
+	    response.write("<body style='font-family:Arial;'>\n");
 	    response.write(marked(data));
 	    response.write("</body>\n");
 	    response.write("</html>\n");
